@@ -1,0 +1,64 @@
+.fab{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+}
+.signedIn{
+  background: #76b01e;
+}
+.signedOut{
+  background: #ed4d4d;
+}
+.main-circle{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px -4px rgba(0,0,0,1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: .2s ease-in-out;
+}
+.fab-menu{
+  padding: 0px;
+  list-style-type: none;
+}
+.fab-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #858585;
+  box-shadow: 0px 2px 8px -3px rgba(0,0,0,1);
+  cursor: pointer;
+  transform: scale(0.2) translateY(50px);
+  opacity: 0;
+  transition: .25s ease-in-out;
+  visibility: hidden;
+}
+.active-fab-link{
+  visibility: visible;
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+}
+.main-circle:hover{
+  box-shadow: 0px 4px 10px -4px rgba(0,0,0,1);
+}
+.fab-circle:hover{
+  box-shadow: 0px 4px 10px -4px rgba(0,0,0,1);
+}
+@media (max-width: 1000px){
+  .fab{
+    bottom: 15px;
+    right: 15px;
+  }
+  .site-icon i{
+    font-size: 40px !important;
+  }
+}

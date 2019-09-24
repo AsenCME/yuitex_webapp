@@ -1,0 +1,16 @@
+{
+    "name": "Юитекс ЕООД",
+    "theme_color": "#620020",
+    "background_color": "#620020",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "yuitex_icon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ]
+  }
